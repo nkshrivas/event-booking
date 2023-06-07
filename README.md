@@ -40,7 +40,7 @@ Once the server is running, you can access the API endpoints using a tool like P
     "location": "Event Location"
   }
   
- ## Response:
+ - Response:
  -Status: 201 Created
  -Body:
   ```json
@@ -48,34 +48,39 @@ Once the server is running, you can access the API endpoints using a tool like P
   "id": "event-id"
   }
   
-  ## Get Event by ID
-  -Endpoint: GET /api/events/:id
-   -Description: Retrieves an event by its ID.
--Parameters:
--id (string): The ID of the event.
--Response:
--Status: 200 OK
--Body:
-```json
-{
-  "id": "event-id",
-  "title": "Event Title",
-  "description": "Event Description",
-  "date": "2023-06-15",
-  "location": "Event Location"
-}
-## Update Event
-Endpoint: PUT /api/events/:id
-Description: Updates an existing event.
-Parameters:
-id (string): The ID of the event to update.
-Request Body:
-{
-  "title": "Updated Event Title",
-  "description": "Updated Event Description",
-  "date": "2023-06-20",
-  "location": "Updated Event Location"
-}
+ ### Get Event by ID
+
+- Endpoint: `GET /api/events/:id`
+- Description: Retrieves an event by its ID.
+- Parameters:
+  - `id` (string): The ID of the event.
+- Response:
+  - Status: 200 OK
+  - Body:
+    ```json
+    {
+      "id": "event-id",
+      "title": "Event Title",
+      "description": "Event Description",
+      "date": "2023-06-15",
+      "location": "Event Location"
+    }
+    ```
+
+### Update Event
+
+- Endpoint: `PUT /api/events/:id`
+- Description: Updates an existing event.
+- Parameters:
+  - `id` (string): The ID of the event to update.
+- Request Body:
+  ```json
+  {
+    "title": "Updated Event Title",
+    "description": "Updated Event Description",
+    "date": "2023-06-20",
+    "location": "Updated Event Location"
+  }
 Response:
 Status: 200 OK
 Body:
