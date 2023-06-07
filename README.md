@@ -49,13 +49,14 @@ Once the server is running, you can access the API endpoints using a tool like P
   }
   
   ## Get Event by ID
-  Endpoint: GET /api/events/:id
-   Description: Retrieves an event by its ID.
-Parameters:
-id (string): The ID of the event.
-Response:
-Status: 200 OK
-Body:
+  -Endpoint: GET /api/events/:id
+   -Description: Retrieves an event by its ID.
+-Parameters:
+-id (string): The ID of the event.
+-Response:
+-Status: 200 OK
+-Body:
+```json
 {
   "id": "event-id",
   "title": "Event Title",
@@ -97,7 +98,7 @@ Status: 204 No Content
 Contributing
 Contributions are welcome! If you find any issues or want to add new features, please submit a pull request or open an issue.
 
-License
+# License
 This project is licensed under the MIT License.
 
 Feel free to customize this template based on your specific project requirements and add any additional sections or information as needed.
